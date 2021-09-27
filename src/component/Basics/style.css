@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: "lato",sans-serif;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+
+html{
+    background:#faf7f2;
+    box-sizing: border-box;
+    background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
+    font-family:"lato",sans-serif;
+    font: size 14px;
+    font-weight: 400;
+}
+
+.subtle{
+    color: rgb(97, 92, 92);
+}
+
+
+.main-card--container{
+    display: grid;
+    grid-gap:50px;
+    grid-template-columns: repeat(3,minmax(300px,500px));
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card-container{
+    margin: 25px auto 0;
+    position: relative;
+    display: grid;
+    justify-content:space-around;
+    align-items:flex-start;
+    grid-template-columns:1fr;
+}
+.card-container img{
+    width: 100%;
+    height: 175px;
+}
+
+.card{
+    background-color:#fff;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(75,75,75,.07);
+    z-index: 1;
+}
+
+.card-body{
+    display: inline-block;
+}
+.card-number{
+    margin-top: 15px;
+}
+.card-circle{
+    border:1px solid #aaa;
+    border-radius:50%;
+    display: inline-block;
+    font: size 12px;
+    height: 25px;
+    line-height: 22px;
+    text-align: center;
+    width: 25px;
+}
+.card-author{
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin: 15px 0 0;
+    text-transform: uppercase;
+}
+.card-title{
+    font-family: "Cormorant Garamond";
+    font-size:60px;
+    font-weight:500;
+    margin: 10px 0;
+    text-transform:capitalize;
+}
+
+.card-description{
+    display: inline-block;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+.card-read{
+    cursor: pointer;
+    font: size 14px;;
+    font-weight:700;
+    letter-spacing: 6px;
+    margin:5px 0 20px;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.card-read:after{
+    background-color:#b8bddd;
+    content: "";
+   display: block;
+   height: 1px;
+   position: absolute;
+   top:9px;
+   width:75%;  
+}
+
+.card-tag{
+    float: right;
+    margin:5px 0 0;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.card-tag:hover{
+    background:#aaa;
+    color:black;
+}
+.card-media{
+    max-width:80%;
+    height:80%;
+}
+@media (max-width:998px){
+    .main-card--container{
+        display: grid;
+        grid-template-columns:repeat(1,minmax(200px,500px));
+        grid-gap:50px;
+        justify-content:space-around;
+    }
+}
+
+/********************************** Navbar***********************/
+
+
+.navbar{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.btn-group{
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+.btn-group__item{
+    border:none;
+    /*min-width:6rem;*/
+    padding: 1.5rem 3rem;
+     background-color:rgba(255,255,255);
+     cursor: pointer;
+     margin: 0;
+     font: size 17px;
+     box-shadow: inset 0px 0px 0px -15px rebeccapurple;
+     text-transform:capitalize;
+     transition: all 300ms ease-out;
+}
